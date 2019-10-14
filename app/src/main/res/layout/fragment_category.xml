@@ -19,12 +19,97 @@
 <layout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    tools:context="com.example.android.navigation.TitleFragment">
+    tools:context="buu.lucio.thaiproverbs.Category">
 
     <androidx.constraintlayout.widget.ConstraintLayout
-        android:id="@+id/titleConstraint"
+        android:id="@+id/categoryFragment"
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
+        <Button
+            android:id="@+id/category1_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:text="A"
+            app:layout_constraintBaseline_toBaselineOf="@+id/category2_button"
+            app:layout_constraintEnd_toStartOf="@+id/category2_button"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <Button
+            android:id="@+id/category2_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="80dp"
+            android:text="B"
+            app:layout_constraintEnd_toStartOf="@+id/category3_button"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/category1_button"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Button
+            android:id="@+id/category3_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="C"
+            app:layout_constraintBaseline_toBaselineOf="@+id/category2_button"
+            app:layout_constraintEnd_toStartOf="@+id/category4_button"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/category2_button" />
+
+        <Button
+            android:id="@+id/category4_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="16dp"
+            android:text="D"
+            app:layout_constraintBaseline_toBaselineOf="@+id/category2_button"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/category3_button" />
+
+        <Button
+            android:id="@+id/category5_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:text="E"
+            app:layout_constraintBaseline_toBaselineOf="@+id/category6_button"
+            app:layout_constraintEnd_toStartOf="@+id/category6_button"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <Button
+            android:id="@+id/category6_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="F"
+            app:layout_constraintEnd_toStartOf="@+id/category7_button"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/category5_button"
+            app:layout_constraintTop_toBottomOf="@+id/category2_button" />
+
+        <Button
+            android:id="@+id/category7_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="G"
+            app:layout_constraintBaseline_toBaselineOf="@+id/category6_button"
+            app:layout_constraintEnd_toStartOf="@+id/category8_button"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/category6_button" />
+
+        <Button
+            android:id="@+id/category8_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="16dp"
+            android:text="H"
+            app:layout_constraintBaseline_toBaselineOf="@+id/category6_button"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/category7_button" />
     </androidx.constraintlayout.widget.ConstraintLayout>
 </layout>
