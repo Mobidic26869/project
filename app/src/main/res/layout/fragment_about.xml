@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="buu.lucio.thaiproverbs.AboutFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/image4">
+
+
+        <TextView
+            android:id="@+id/about_textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="160dp"
+            android:layout_marginTop="47dp"
+            android:layout_marginEnd="190dp"
+            android:text="@string/about_me"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:textColor="@android:color/background_light"
+            android:fontFamily="@font/roboto"/>
+
+        <TextView
+            android:id="@+id/detail_textView"
+            android:layout_width="320dp"
+            android:layout_height="159dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="62dp"
+            android:layout_marginEnd="16dp"
+            android:fontFamily="@font/roboto"
+            android:text="แอพสำนวน สุภาษิต คำพังเพยไทย รวบรวมข้อมูลสุภาษิตไทยพร้อมคำแปลมากกว่า 500 คำ
+
+แอพสำนวน สุภาษิต คำพังเพยไทย ได้รวบรวมข้อมูลสุภาษิตไทยและคำแปลมากถึง 500 คำ  ให้นักเรียน หรือ ผู้ที่สนใจสามารถนำไปศึกษา  เพื่อไม่ให้ความรู้เหล่านี้สูญหายไป
+"
+            android:textColor="@android:color/background_light"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/about_textView" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    </layout>

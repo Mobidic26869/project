@@ -1,4 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <dimen name="title_size">30sp</dimen>
+    <dimen name="textsize_Button">23sp</dimen>
+    <dimen name="textsize_view">21sp</dimen>
 </resources>

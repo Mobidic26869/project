@@ -24,17 +24,19 @@
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/categoryFragment"
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="match_parent"
+        android:background="@drawable/image4">
 
         <Button
             android:id="@+id/category1_button"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="16dp"
-            android:text="A"
+            android:text="ก"
             app:layout_constraintBaseline_toBaselineOf="@+id/category2_button"
             app:layout_constraintEnd_toStartOf="@+id/category2_button"
             app:layout_constraintHorizontal_bias="0.5"
+
             app:layout_constraintStart_toStartOf="parent" />
 
         <Button
@@ -42,7 +44,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="80dp"
-            android:text="B"
+            android:text="ข"
             app:layout_constraintEnd_toStartOf="@+id/category3_button"
             app:layout_constraintHorizontal_bias="0.5"
             app:layout_constraintStart_toEndOf="@+id/category1_button"
@@ -52,7 +54,7 @@
             android:id="@+id/category3_button"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="C"
+            android:text="ค"
             app:layout_constraintBaseline_toBaselineOf="@+id/category2_button"
             app:layout_constraintEnd_toStartOf="@+id/category4_button"
             app:layout_constraintHorizontal_bias="0.5"
@@ -63,7 +65,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginEnd="16dp"
-            android:text="D"
+            android:text="ฆ"
             app:layout_constraintBaseline_toBaselineOf="@+id/category2_button"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.5"
@@ -74,7 +76,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="16dp"
-            android:text="E"
+            android:text="ง"
             app:layout_constraintBaseline_toBaselineOf="@+id/category6_button"
             app:layout_constraintEnd_toStartOf="@+id/category6_button"
             app:layout_constraintHorizontal_bias="0.5"
@@ -85,7 +87,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="16dp"
-            android:text="F"
+            android:text="จ"
             app:layout_constraintEnd_toStartOf="@+id/category7_button"
             app:layout_constraintHorizontal_bias="0.5"
             app:layout_constraintStart_toEndOf="@+id/category5_button"
@@ -95,7 +97,7 @@
             android:id="@+id/category7_button"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="G"
+            android:text="ฉ"
             app:layout_constraintBaseline_toBaselineOf="@+id/category6_button"
             app:layout_constraintEnd_toStartOf="@+id/category8_button"
             app:layout_constraintHorizontal_bias="0.5"
@@ -106,10 +108,254 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginEnd="16dp"
-            android:text="H"
+            android:text="ช"
             app:layout_constraintBaseline_toBaselineOf="@+id/category6_button"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.5"
             app:layout_constraintStart_toEndOf="@+id/category7_button" />
+
+        <Button
+            android:id="@+id/category9_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:text="ซ"
+            app:layout_constraintBaseline_toBaselineOf="@+id/category10_button"
+            app:layout_constraintEnd_toStartOf="@+id/category10_button"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <Button
+            android:id="@+id/category10_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="ฒ"
+            app:layout_constraintEnd_toStartOf="@+id/category11_button"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/category9_button"
+            app:layout_constraintTop_toBottomOf="@+id/category6_button" />
+
+        <Button
+            android:id="@+id/category11_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="ด"
+            app:layout_constraintBaseline_toBaselineOf="@+id/category10_button"
+            app:layout_constraintEnd_toStartOf="@+id/category12_button"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/category10_button" />
+
+        <Button
+            android:id="@+id/category12_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="16dp"
+            android:text="ต"
+            app:layout_constraintBaseline_toBaselineOf="@+id/category10_button"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/category11_button" />
+
+        <Button
+            android:id="@+id/category13_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:text="ถ"
+            app:layout_constraintBaseline_toBaselineOf="@+id/category14_button"
+            app:layout_constraintEnd_toStartOf="@+id/category14_button"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <Button
+            android:id="@+id/category14_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="ท"
+            app:layout_constraintEnd_toStartOf="@+id/category15_button"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/category13_button"
+            app:layout_constraintTop_toBottomOf="@+id/category10_button" />
+
+        <Button
+            android:id="@+id/category15_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="ธ"
+            app:layout_constraintBaseline_toBaselineOf="@+id/category14_button"
+            app:layout_constraintEnd_toStartOf="@+id/category16_button"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/category14_button" />
+
+        <Button
+            android:id="@+id/category16_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="16dp"
+            android:text="น"
+            app:layout_constraintBaseline_toBaselineOf="@+id/category14_button"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/category15_button" />
+
+        <Button
+            android:id="@+id/category17_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:text="บ"
+            app:layout_constraintBaseline_toBaselineOf="@+id/category18_button"
+            app:layout_constraintEnd_toStartOf="@+id/category18_button"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <Button
+            android:id="@+id/category18_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="ป"
+            app:layout_constraintEnd_toStartOf="@+id/category19_button"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/category17_button"
+            app:layout_constraintTop_toBottomOf="@+id/category14_button" />
+
+        <Button
+            android:id="@+id/category19_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="ผ"
+            app:layout_constraintBaseline_toBaselineOf="@+id/category18_button"
+            app:layout_constraintEnd_toStartOf="@+id/category20_button"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/category18_button" />
+
+        <Button
+            android:id="@+id/category20_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="16dp"
+            android:text="ฝ"
+            app:layout_constraintBaseline_toBaselineOf="@+id/category18_button"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/category19_button" />
+
+        <Button
+            android:id="@+id/category21_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:text="พ"
+            app:layout_constraintBaseline_toBaselineOf="@+id/category22_button"
+            app:layout_constraintEnd_toStartOf="@+id/category22_button"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <Button
+            android:id="@+id/category22_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="ฟ"
+            app:layout_constraintEnd_toStartOf="@+id/category23_button"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/category21_button"
+            app:layout_constraintTop_toBottomOf="@+id/category18_button" />
+
+        <Button
+            android:id="@+id/category23_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="ม"
+            app:layout_constraintBaseline_toBaselineOf="@+id/category22_button"
+            app:layout_constraintEnd_toStartOf="@+id/category24_button"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/category22_button" />
+
+        <Button
+            android:id="@+id/category24_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="16dp"
+            android:text="ย"
+            app:layout_constraintBaseline_toBaselineOf="@+id/category22_button"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/category23_button" />
+
+        <Button
+            android:id="@+id/category25_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:text="ร"
+            app:layout_constraintBaseline_toBaselineOf="@+id/category26_button"
+            app:layout_constraintEnd_toStartOf="@+id/category26_button"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <Button
+            android:id="@+id/category26_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="ล"
+            app:layout_constraintEnd_toStartOf="@+id/category27_button"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/category25_button"
+            app:layout_constraintTop_toBottomOf="@+id/category22_button" />
+
+        <Button
+            android:id="@+id/category27_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="ว"
+            app:layout_constraintBaseline_toBaselineOf="@+id/category26_button"
+            app:layout_constraintEnd_toStartOf="@+id/category28_button"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/category26_button" />
+
+        <Button
+            android:id="@+id/category28_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="16dp"
+            android:text="ศ"
+            app:layout_constraintBaseline_toBaselineOf="@+id/category26_button"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/category27_button" />
+
+        <Button
+            android:id="@+id/category29_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:text="ส"
+            app:layout_constraintBaseline_toBaselineOf="@+id/category30_button"
+            app:layout_constraintEnd_toStartOf="@+id/category30_button"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <Button
+            android:id="@+id/category30_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="ห"
+            app:layout_constraintEnd_toStartOf="@+id/category31_button"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/category29_button"
+            app:layout_constraintTop_toBottomOf="@+id/category26_button" />
+
+        <Button
+            android:id="@+id/category31_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="110dp"
+            android:text="อ"
+            app:layout_constraintBaseline_toBaselineOf="@+id/category30_button"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/category30_button" />
     </androidx.constraintlayout.widget.ConstraintLayout>
 </layout>

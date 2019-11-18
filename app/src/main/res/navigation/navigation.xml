@@ -3,20 +3,63 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/navigation"
-    app:startDestination="@id/title2">
+    app:startDestination="@id/loginFragment4">
 
-    <fragment
-        android:id="@+id/title2"
-        android:name="buu.lucio.thaiproverbs.Title"
-        android:label="fragment_title"
-        tools:layout="@layout/fragment_title" >
-        <action
-            android:id="@+id/action_title2_to_category2"
-            app:destination="@id/category2" />
-    </fragment>
     <fragment
         android:id="@+id/category2"
         android:name="buu.lucio.thaiproverbs.Category"
         android:label="fragment_category"
-        tools:layout="@layout/fragment_category" />
+        tools:layout="@layout/fragment_category" >
+        <action
+            android:id="@+id/action_category2_to_list"
+            app:destination="@id/list" />
+    </fragment>
+    <fragment
+        android:id="@+id/list"
+        android:name="buu.lucio.thaiproverbs.list"
+        android:label="fragment_list"
+        tools:layout="@layout/fragment_list" >
+        <action
+            android:id="@+id/action_list_to_results"
+            app:destination="@id/results" />
+    </fragment>
+    <fragment
+        android:id="@+id/results"
+        android:name="buu.lucio.thaiproverbs.Results"
+        android:label="fragment_results"
+        tools:layout="@layout/fragment_results" >
+        <action
+            android:id="@+id/action_results_to_list"
+            app:destination="@id/list" />
+        <action
+            android:id="@+id/action_results_to_titleFragment"
+            app:destination="@id/titleFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/aboutFragment"
+        android:name="buu.lucio.thaiproverbs.AboutFragment"
+        android:label="fragment_about"
+        tools:layout="@layout/fragment_about" />
+    <fragment
+        android:id="@+id/loginFragment4"
+        android:name="buu.lucio.thaiproverbs.LoginFragment"
+        android:label="fragment_login"
+        tools:layout="@layout/fragment_login" >
+        <action
+            android:id="@+id/action_loginFragment4_to_titleFragment"
+            app:destination="@id/titleFragment" />
+        <action
+            android:id="@+id/action_loginFragment4_self"
+            app:destination="@id/loginFragment4" />
+    </fragment>
+    <fragment
+        android:id="@+id/titleFragment"
+        android:name="buu.lucio.thaiproverbs.TitleFragment"
+        android:label="fragment_title"
+        tools:layout="@layout/fragment_title" >
+        <action
+            android:id="@+id/action_titleFragment_to_category2"
+            app:destination="@id/category2" />
+    </fragment>
+
 </navigation>
