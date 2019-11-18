@@ -36,6 +36,7 @@ class list : Fragment() {
         arrList.add(List("Dragon fruit", "dragon fruit description"))
         arrList.add(List("Durian", "durian description"))
 
+        binding.listView.adapter = this.context?.let{ customAdapter(it,arrList)}
         return binding.root
     }
 }

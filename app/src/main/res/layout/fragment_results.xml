@@ -25,15 +25,16 @@
         android:id="@+id/resultsFragment"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:background="@drawable/image8">
+        android:background="@drawable/image13">
 
 
         <Button
             android:id="@+id/home_Button"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="100dp"
+            android:layout_height="52dp"
             android:layout_marginTop="16dp"
             android:layout_marginBottom="24dp"
+            android:background="@drawable/image6"
             android:text="@string/home"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
@@ -44,8 +45,9 @@
 
         <Button
             android:id="@+id/back_Button"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="100dp"
+            android:layout_height="52dp"
+            android:background="@drawable/image6"
             android:text="@string/back"
             app:layout_constraintBaseline_toBaselineOf="@+id/home_Button"
             app:layout_constraintEnd_toStartOf="@+id/home_Button"
@@ -59,7 +61,7 @@
             android:layout_marginStart="16dp"
             android:layout_marginTop="160dp"
             android:layout_marginEnd="16dp"
-            android:background="@color/colorPrimary"
+            android:background="@drawable/image14"
             android:text="Preview TextView"
             android:textAlignment="center"
             android:textColor="@android:color/background_light"

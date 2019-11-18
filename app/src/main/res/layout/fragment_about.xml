@@ -8,7 +8,7 @@
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:background="@drawable/image4">
+        android:background="@drawable/image9">
 
 
         <TextView
@@ -16,14 +16,15 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="160dp"
-            android:layout_marginTop="47dp"
+            android:layout_marginTop="70dp"
             android:layout_marginEnd="190dp"
+            android:fontFamily="@font/roboto"
             android:text="@string/about_me"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/textsize_Button"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            android:textColor="@android:color/background_light"
-            android:fontFamily="@font/roboto"/>
+            app:layout_constraintTop_toTopOf="parent" />
 
         <TextView
             android:id="@+id/detail_textView"
@@ -37,7 +38,7 @@
 
 แอพสำนวน สุภาษิต คำพังเพยไทย ได้รวบรวมข้อมูลสุภาษิตไทยและคำแปลมากถึง 500 คำ  ให้นักเรียน หรือ ผู้ที่สนใจสามารถนำไปศึกษา  เพื่อไม่ให้ความรู้เหล่านี้สูญหายไป
 "
-            android:textColor="@android:color/background_light"
+            android:textColor="@android:color/black"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/about_textView" />

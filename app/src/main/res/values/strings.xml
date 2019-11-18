@@ -9,5 +9,7 @@
     <string name="home">Home</string>
     <string name="about_me">เกี่ยวกับเรา</string>
     <string name="Login">login</string>
+    <string name="Listdata">listdata</string>
+    <string name="Detail">detail_text</string>
 
 </resources>
