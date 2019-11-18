@@ -1,9 +1,12 @@
 package buu.lucio.thaiproverbs
 
 
+import android.content.Context
 import android.os.Bundle
 import android.view.*
+import android.view.inputmethod.InputMethodManager
 import android.widget.Toast
+import androidx.core.content.ContextCompat.getSystemService
 import androidx.fragment.app.Fragment
 import androidx.databinding.DataBindingUtil
 import androidx.navigation.findNavController
@@ -21,17 +24,14 @@ class LoginFragment : Fragment() {
        val binding = DataBindingUtil.inflate<FragmentLoginBinding>(inflater,R.layout.fragment_login,container,false)
         binding.loginButton.setOnClickListener {view ->
             var status = if(user_EditText.text.toString().equals("pimnipa")
-                && Pass_editText.text.toString().equals("1234"))  "Login Successfuly" else "LogIn Fail"
-            if (Toast.makeText(context,status, Toast.LENGTH_SHORT).show().equals("Login Successfuly")){
-                view.findNavController().navigate(R.id.action_loginFragment4_to_titleFragment)
-            }else{
-                view.findNavController().navigate(R.id.action_loginFragment4_self)
-            }
-
+                && Pass_editText.text.toString().equals("1234"))
+                Toast.makeText(context,"Login Successfuly", Toast.LENGTH_SHORT).show().run { view.findNavController().navigate(R.id.action_loginFragment4_to_titleFragment)}
+            else Toast.makeText(context,"Login Fail", Toast.LENGTH_SHORT).show().run { view.findNavController().navigate(R.id.action_loginFragment4_self)}
 
         }
-        return binding.root
-    }
 
+        return binding.root
+
+    }
 
 }

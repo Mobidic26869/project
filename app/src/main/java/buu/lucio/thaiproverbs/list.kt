@@ -21,23 +21,20 @@ import kotlinx.android.synthetic.main.fragment_list.*
 class list : Fragment() {
 
 
-   var nameItem = arrayOf("A", "B", "C")
-
-
-
     override fun onCreateView(
         inflater: LayoutInflater,
         container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
         val binding = DataBindingUtil.inflate<FragmentListBinding>(inflater,R.layout.fragment_list,container,false)
-        binding.goButton.setOnClickListener{view ->
-            view.findNavController().navigate(R.id.action_list_to_results)
-
-        }
-
-        val adapter = customAdapter()
-        binding.listRecyclerview.adapter = adapter
+        var arrList: ArrayList<List> = ArrayList()
+        arrList.add(List("Apple","asian pear description"))
+        arrList.add(List("Asian pear", "asian pear description"))
+        arrList.add(List("Banana", "banana description"))
+        arrList.add(List("Cantaloupe", "cantaloupe description"))
+        arrList.add(List("Custard apple", "custard apple description"))
+        arrList.add(List("Dragon fruit", "dragon fruit description"))
+        arrList.add(List("Durian", "durian description"))
 
         return binding.root
     }
