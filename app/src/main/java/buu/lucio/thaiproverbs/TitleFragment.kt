@@ -1,18 +1,24 @@
 package buu.lucio.thaiproverbs
 
 
+import android.content.ActivityNotFoundException
+import android.content.Intent
 import android.os.Bundle
 import android.view.*
+import android.widget.Button
+import androidx.core.app.ShareCompat
 import androidx.fragment.app.Fragment
 import androidx.databinding.DataBindingUtil
 import androidx.navigation.findNavController
 import androidx.navigation.ui.NavigationUI
 import buu.lucio.thaiproverbs.databinding.FragmentTitleBinding
+import kotlinx.android.synthetic.main.fragment_title.*
 
 /**
  * A simple [Fragment] subclass.
  */
 class TitleFragment : Fragment() {
+
 
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?,
                               savedInstanceState: Bundle?): View? {
@@ -34,7 +40,6 @@ class TitleFragment : Fragment() {
         return NavigationUI.onNavDestinationSelected(item!!,
             view!!.findNavController()) || super.onOptionsItemSelected(item)
     }
-
 
 }
 

@@ -16,7 +16,7 @@
     </fragment>
     <fragment
         android:id="@+id/list"
-        android:name="buu.lucio.thaiproverbs.list"
+        android:name="buu.lucio.thaiproverbs.ListFragment"
         android:label="fragment_list"
         tools:layout="@layout/fragment_list" >
         <action
@@ -50,6 +50,9 @@
             app:destination="@id/titleFragment" />
         <action
             android:id="@+id/action_loginFragment4_self"
+            app:destination="@id/loginFragment4" />
+        <action
+            android:id="@+id/action_loginFragment4_self2"
             app:destination="@id/loginFragment4" />
     </fragment>
     <fragment

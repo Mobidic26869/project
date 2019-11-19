@@ -15,11 +15,13 @@ import buu.lucio.thaiproverbs.databinding.FragmentResultsBinding
  */
 class Results : Fragment() {
 
+    private lateinit var binding: FragmentResultsBinding
+
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        val binding = DataBindingUtil.inflate<FragmentResultsBinding>(inflater,R.layout.fragment_results,container,false)
+        binding = DataBindingUtil.inflate(inflater,R.layout.fragment_results,container,false)
         binding.backButton.setOnClickListener {view ->
             view.findNavController().navigate(R.id.action_results_to_list)
 
@@ -27,6 +29,13 @@ class Results : Fragment() {
         binding.homeButton.setOnClickListener {view ->
             view.findNavController().navigate(R.id.action_results_to_titleFragment)
         }
+
+
+
+
+
+
+
         return binding.root
     }
 
