@@ -19,7 +19,7 @@
 <layout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    tools:context="buu.lucio.thaiproverbs.Results">
+    tools:context="buu.lucio.thaiproverbs.ResultFragment">
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/resultsFragment"
@@ -59,12 +59,25 @@
             android:layout_width="match_parent"
             android:layout_height="400dp"
             android:layout_marginStart="16dp"
-            android:layout_marginTop="160dp"
+            android:layout_marginTop="68dp"
             android:layout_marginEnd="16dp"
             android:background="@drawable/image14"
             android:text="Preview TextView"
             android:textAlignment="center"
             android:textColor="@android:color/background_light"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/detail_textView"
+            android:layout_width="280dp"
+            android:layout_height="268dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="130dp"
+            android:layout_marginEnd="16dp"
+            android:text="TextView"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />

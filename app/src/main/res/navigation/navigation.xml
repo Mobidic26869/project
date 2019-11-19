@@ -7,12 +7,15 @@
 
     <fragment
         android:id="@+id/category2"
-        android:name="buu.lucio.thaiproverbs.Category"
+        android:name="buu.lucio.thaiproverbs.CategoryFragment"
         android:label="fragment_category"
         tools:layout="@layout/fragment_category" >
         <action
             android:id="@+id/action_category2_to_list"
             app:destination="@id/list" />
+        <action
+            android:id="@+id/action_category2_to_titleFragment"
+            app:destination="@id/titleFragment" />
     </fragment>
     <fragment
         android:id="@+id/list"
@@ -22,18 +25,21 @@
         <action
             android:id="@+id/action_list_to_results"
             app:destination="@id/results" />
+        <action
+            android:id="@+id/action_list_to_category2"
+            app:destination="@id/category2" />
     </fragment>
     <fragment
         android:id="@+id/results"
-        android:name="buu.lucio.thaiproverbs.Results"
+        android:name="buu.lucio.thaiproverbs.ResultFragment"
         android:label="fragment_results"
         tools:layout="@layout/fragment_results" >
         <action
-            android:id="@+id/action_results_to_list"
-            app:destination="@id/list" />
-        <action
             android:id="@+id/action_results_to_titleFragment"
             app:destination="@id/titleFragment" />
+        <action
+            android:id="@+id/action_results_to_list"
+            app:destination="@id/list" />
     </fragment>
     <fragment
         android:id="@+id/aboutFragment"

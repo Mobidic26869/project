@@ -24,17 +24,17 @@ class LoginFragment : Fragment() {
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?,
                                 savedInstanceState: Bundle?): View? {
        val binding = DataBindingUtil.inflate<FragmentLoginBinding>(inflater,R.layout.fragment_login,container,false)
+
         binding.loginButton.setOnClickListener {view ->
+
             if(user_EditText.text.toString().equals("pimnipa")
                 && Pass_editText.text.toString().equals("1234"))
                 Toast.makeText(context,"Login Successfuly", Toast.LENGTH_SHORT).show().run { view.findNavController().navigate(R.id.action_loginFragment4_to_titleFragment)}
             else Toast.makeText(context,"Login Fail", Toast.LENGTH_SHORT).show().run { view.findNavController().navigate(R.id.action_loginFragment4_self)}
-
 
         }
 
         return binding.root
 
     }
-
 }

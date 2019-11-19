@@ -5,11 +5,13 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.BaseAdapter
+import android.widget.Button
 import android.widget.TextView
 
 class customAdapter(var context: Context, var listType: ArrayList<ListData>): BaseAdapter() {
     private class ViewHolder(row: View?){
         var txtName: TextView
+
 
         init {
             this.txtName = row?.findViewById(R.id.name_text) as TextView
