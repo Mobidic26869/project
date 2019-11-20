@@ -1,10 +1,13 @@
 package buu.lucio.thaiproverbs
 
 
+import android.content.Intent
 import android.os.Bundle
 import android.view.*
 import androidx.fragment.app.Fragment
 import androidx.databinding.DataBindingUtil
+import androidx.databinding.DataBindingUtil.setContentView
+import androidx.fragment.app.ListFragment
 import androidx.navigation.findNavController
 import androidx.navigation.fragment.findNavController
 import buu.lucio.thaiproverbs.databinding.FragmentCategoryBinding
@@ -21,14 +24,19 @@ class CategoryFragment : Fragment() {
         val binding = DataBindingUtil.inflate<FragmentCategoryBinding>(inflater,R.layout.fragment_category,container,false)
 
         binding.category1Button.setOnClickListener {view ->
+
+//            val txt:String = "ก"
+//            val intent = Intent(this.context,ListFragment::class.java)
+//            intent.putExtra("txt1", txt)
+//            startActivity(intent)
+
             view.findNavController().navigate(R.id.action_category2_to_list)
-
-
         }
+
         binding.category2Button.setOnClickListener {view ->
             view.findNavController().navigate(R.id.action_category2_to_list)
-
         }
+
         binding.category3Button.setOnClickListener {view ->
             view.findNavController().navigate(R.id.action_category2_to_list)
 

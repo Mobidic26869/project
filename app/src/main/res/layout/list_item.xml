@@ -23,10 +23,11 @@
             android:textSize="@dimen/textsize_view" />
 
         <Button
-            android:id="@+id/button3"
+            android:id="@+id/mean_Button"
             android:layout_width="118dp"
             android:layout_height="37dp"
-            android:layout_marginLeft="230dp"
+            android:layout_marginLeft="220dp"
+            android:background="@android:drawable/button_onoff_indicator_off"
             android:text="ความหมาย" />
 
 

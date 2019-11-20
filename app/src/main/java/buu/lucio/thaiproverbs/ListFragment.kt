@@ -1,6 +1,8 @@
 package buu.lucio.thaiproverbs
 
 
+import android.content.Intent
+import android.content.Intent.getIntent
 import android.os.Bundle
 import android.view.*
 import androidx.fragment.app.Fragment
@@ -22,15 +24,12 @@ import kotlinx.android.synthetic.main.list_item.*
  */
 class   ListFragment : Fragment() {
 
-
     override fun onCreateView(
         inflater: LayoutInflater,
         container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
         val binding = DataBindingUtil.inflate<FragmentListBinding>(inflater, R.layout.fragment_list, container, false)
-        val type1 = R.id.category1_button
-        val type2 = R.id.category2_button
 
 
         var arrList: ArrayList<ListData> = ArrayList()
@@ -38,22 +37,15 @@ class   ListFragment : Fragment() {
         arrList.add(ListData("กงเกวียนกำเกวียน"))
         arrList.add(ListData("กบเกิดใต้บัวบาน"))
         arrList.add(ListData("กระจอกงอกง่อย"))
-
-
-
-        arrList.add(ListData("COBRA (โค-บระ) งูเห่า"))
-        arrList.add(ListData("EAGLE (อิ-เกิล) นกอินทรี"))
-        arrList.add(ListData("GOOSE (กูส)  ห่าน"))
-
-
-        arrList.add(ListData("KOALA (โคอาลา) หมีโคอาลา"))
-        arrList.add(ListData("PENGUIN (แพน-ควิน) เพนกวิน"))
-        arrList.add(ListData("RACCOON (เรคูน) แร็คคูน"))
-
+        arrList.add(ListData("กระดังงาลนไฟ"))
+        arrList.add(ListData("กระดี่ได้น้ำ"))
+        arrList.add(ListData("กระดูกขัดมัน"))
+        arrList.add(ListData("กระต่ายขาเดียว"))
+        arrList.add(ListData("กระต่ายตื่นตูม"))
+        arrList.add(ListData("กระต่ายหมายจันทร์"))
 
 
         binding.listView.adapter = this.context?.let { customAdapter(it,arrList) }
-
 
         setHasOptionsMenu(true)
         return binding.root
@@ -67,7 +59,10 @@ class   ListFragment : Fragment() {
     override fun onOptionsItemSelected(item: MenuItem): Boolean {
        when(item.itemId){
            R.id.backMenu -> findNavController().navigate(R.id.action_list_to_category2)
+
        }
         return super.onOptionsItemSelected(item)
     }
+
+
 }

@@ -1,6 +1,8 @@
 package buu.lucio.thaiproverbs
 
 
+import android.content.Context
+import android.content.Intent
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
@@ -28,6 +30,7 @@ class ResultFragment : Fragment() {
         binding.homeButton.setOnClickListener {view ->
             view.findNavController().navigate(R.id.action_results_to_titleFragment)
         }
+
 
 
 //        var arrList: ArrayList<ListData> = ArrayList()
